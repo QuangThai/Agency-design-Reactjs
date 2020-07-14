@@ -1,0 +1,48 @@
+{
+  "portfolio": [
+    {
+      "id": 1,
+      "image": "https://quangthai.github.io/Agency-Design/images/fish.png",
+      "title": "Phone mockup 1 "
+    },
+    {
+      "id": 2,
+      "image": "https://quangthai.github.io/Agency-Design/images/app-design3.png",
+      "title": "Phone mockup 2 "
+    },
+    {
+      "id": 3,
+      "image": "https://quangthai.github.io/Agency-Design/images/How-UX-UI-Design-Will-Help-Your-Business-Succeed.png",
+      "title": "Phone mockup 3"
+    },
+    {
+      "id": 4,
+      "image": "https://quangthai.github.io/Agency-Design/images/thumbnail-918x656-01-8be87c%20(1).png",
+      "title": "Phone mockup 4"
+    }
+  ],
+
+  "blog": [
+    {
+      "id": 1,
+      "date": "26th October,2019",
+      "image": "https://quangthai.github.io/Agency-Design/images/blog-1.png",
+      "title": "I enjoy turning complex problems into simple, beautiful and intuitive designs.",
+      "description": "Lorem ipsum dolor sit amet,Stet clita kasd is the most lorem ipsum dolor sit amet."
+    },
+    {
+      "id": 2,
+      "date": "26th October,2020",
+      "image": "https://quangthai.github.io/Agency-Design/images/blog-2.png",
+      "title": "I enjoy turning complex problems into simple, beautiful and intuitive designs.",
+      "description": "Lorem ipsum dolor sit amet,Stet clita kasd is the most lorem ipsum dolor sit amet."
+    },
+    {
+      "id": 3,
+      "date": "26th October,2021",
+      "image": "https://quangthai.github.io/Agency-Design/images/blog-3.png",
+      "title": "I enjoy turning complex problems into simple, beautiful and intuitive designs.",
+      "description": "Lorem ipsum dolor sit amet,Stet clita kasd is the most lorem ipsum dolor sit amet."
+    }
+  ]
+}
