@@ -1,9 +1,8 @@
 import React from "react";
 import BlogItem from "./BlogItem";
-import Data from "../../api/data.json";
 
-const index = () => {
-  const ListBlog = Data.blog.map((item, index) => {
+const index = ({ blogList }) => {
+  const listBlogPost = blogList.map((item, index) => {
     return <BlogItem key={index} blog={item} />;
   });
   return (
@@ -17,9 +16,7 @@ const index = () => {
           <br />
           <p className="heading-desc">Trendy News Feeds</p>
         </div>
-        <div className="row">
-          {ListBlog}
-        </div>
+        <div className="row">{listBlogPost}</div>
         <div className="service__btn">
           <a href="#!" className="btn btn--active btn--radius btn--view">
             View all

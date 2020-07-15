@@ -2,7 +2,6 @@ import React from "react";
 
 const index = (props) => {
   const { blog } = props;
-  console.log(blog);
   return (
     <div className="col l-4">
       <div className="blog__single">

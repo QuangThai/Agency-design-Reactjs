@@ -25,7 +25,6 @@
 //    dots[slideIndex - 1].className += " testimonial__dots-one--active";
 // }
 
-
 // function addClass
 function addClass(element, className) {
    const currentClassName = element.getAttribute("class");
@@ -60,8 +59,8 @@ document.addEventListener("DOMContentLoaded", function () {
    const backTop = document.querySelector('.back-to-top');
    const dots = document.querySelectorAll(".testimonial__image");
    const popup = document.querySelector(".testimonial__detail");
-   const popupClose = document.querySelector('.testimonial__detail-close');
    const popupOverlay = document.querySelector('.testimonial__overlay');
+   // const popupClose = document.querySelector('.testimonial__detail-close');
 
    // back-to-top
    window.onscroll = function () {
@@ -110,16 +109,15 @@ document.addEventListener("DOMContentLoaded", function () {
    }
 
    // popup slider
-   popupClose.addEventListener('click', () => {
-      removeClass(popup, 'testimonial__detail--active');
-      removeClass(popupOverlay, 'testimonial__overlay--active');
-   });
+   // popupClose.addEventListener('click', () => {
+   //    removeClass(popup, 'testimonial__detail--active');
+   //    removeClass(popupOverlay, 'testimonial__overlay--active');
+   // });
 
-   popupOverlay.addEventListener('click', () => {
-      removeClass(popup, 'testimonial__detail--active');
-      removeClass(popupOverlay, 'testimonial__overlay--active');
-   });
+   // popupOverlay.addEventListener('click', () => {
+   //    removeClass(popup, 'testimonial__detail--active');
+   //    removeClass(popupOverlay, 'testimonial__overlay--active');
+   // });
 
 }, false);
-
 
