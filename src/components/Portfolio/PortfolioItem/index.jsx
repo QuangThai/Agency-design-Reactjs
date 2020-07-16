@@ -1,7 +1,6 @@
 import React from "react";
 
-const index = (props) => {
-  const { port } = props;
+const index = ({ port }) => {
   return (
     <div className="col l-3 m-6 c-12 portfolio__container">
       <div className="portfolio__wrapper">
