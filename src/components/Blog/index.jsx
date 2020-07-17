@@ -1,8 +1,17 @@
-import React from "react";
+/* eslint-disable react-hooks/rules-of-hooks */
+import React, { useEffect } from "react";
 import BlogItem from "./BlogItem";
+import { useSelector, useDispatch } from "react-redux";
+import { actFetchBlogsRequest } from "../../actions";
 
-const index = ({ blogList }) => {
-  const listBlogPost = blogList.map((item, index) => {
+const index = () => {
+  const dispatch = useDispatch();
+  const blogs = useSelector((state) => state.blogs.currentBlog);
+  useEffect(() => {
+    dispatch(actFetchBlogsRequest());
+  }, [dispatch]);
+
+  const listBlogPost = blogs.map((item, index) => {
     return <BlogItem key={index} blog={item} />;
   });
   return (

@@ -1,12 +1,20 @@
-import React from "react";
+/* eslint-disable react-hooks/rules-of-hooks */
+import React, { useEffect } from "react";
 import PortfolioItem from "./PortfolioItem";
+import { useSelector, useDispatch } from "react-redux";
+import { actFetchPortfoliosRequest } from "../../actions";
 
-const index = ({ portfolio }) => {
+const index = () => {
+  const dispatch = useDispatch();
+  const portfolio = useSelector((state) => state.portfolios.currentPortfolio);
+  useEffect(() => {
+    dispatch(actFetchPortfoliosRequest());
+  }, [dispatch]);
 
   const ListPortfolio = portfolio.map((item, index) => {
     return <PortfolioItem key={index} port={item} />;
   });
-  
+
   return (
     <section className="portfolio">
       <div className="grid wide">
